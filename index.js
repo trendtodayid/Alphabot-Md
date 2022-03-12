@@ -1,21 +1,3 @@
-/**
-	@ No Re Upload, recode sendiri base nya klo mau 😏
-	@ Sc no enc silahkan cek https://github.com/DikaArdnt/alpha-Morou
- 
-	 「 TqTo 」
-	@ My God
-	@ My Parents
-	@ Fatih A.
-	@ Ferdi
-	@ DikaArdnt [author]
-	@ Mhankbarbar
-	@ Nurutomo
-	@ Rashid
-	@ ZeeoneOfc
-	@ Penyedia Module
-	@ And All Support
-**/
-
 
 require('./settings')
 const { default: makeWASocket, BufferJSON, WAMessageStubType, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia , generateWAMessage, areJidsSameUser, makeInMemoryStore} = require('@adiwajshing/baileys-md')
