@@ -1,18 +1,18 @@
 exports.private = () =>{
-	return`Fitur hanya bisa di gunakan di private chat`
+	return`*Maaf,* Fitur hanya bisa di gunakan di private chat`
 	}
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return `Sedang di proses, Silahkan Tunggu\n\n*Note : Apabila bot tidak membalas dalam max 3 menit, Artinya sistem erorr*`
 }
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `Ok`
 }
 
 exports.err = () => {
-    return `⚠️ Fitur Sedang Error`
+    return `Maaf, Fitur Sedang Erorr\nSilahkan ulangi kembali`
 }
 exports.erorLink = () => {
-    return `⚠️ Link nya error`
+    return `Maaf, Link yang anda kirim tidak valid\nSilahkan kirim ulang permintaan yang sama`
 }
 exports.media = () => {
     return `Silahkan pilih media yang ingin kamu download`
@@ -22,19 +22,19 @@ exports.replyImg = (prefix, command) => {
 }
 
 exports.wrongFormat = (prefix) => {
-    return `Format salah ❎ Silakan cek cara penggunaan di *${prefix}allmenu*.`
+    return `*Format Salah*\nSilakan cek cara penggunaan di *${prefix}allmenu*.`
 }
 
 exports.emptyMess = () => {
-    return `❎ Harap masukkan pesan yang ingin disampaikan!`
+    return `Harap masukkan kembali pesan yang ingin disampaikan!`
 }
 
 exports.cmdNotFound = (cmd, prefix) => {
-    return `❎ Command *${cmd}* tidak terdaftar di *${prefix}allmenu*`
+    return `Command *${cmd}* tidak terdaftar di *${prefix}allmenu*`
 }
 
 exports.ownerOnly = () => {
-    return `❎ Command ini khusus Owner`
+    return `Fitur tersebut hanya untuk *pemilik bot*`
 }
 
 exports.doneOwner = () => {
@@ -42,11 +42,11 @@ exports.doneOwner = () => {
 }
 
 exports.groupOnly = () => {
-    return `👥  Command ini hanya bisa digunakan di dalam grup!`
+    return `${pushname} melalukan perintah di Group chat\nMaaf Fitur hanya bisa digunakan di *private*\nFollow instagram @trendtoday.id!`
 }
 
 exports.adminOnly = () => {
-    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
+    return `hallo ${pushname}, Perintah hanya bisa diaktifkan oleh *Admin*\nSilahkan tag admin untuk mengaktifkan fitur ini!`
 }
 
 exports.nhFalse = () => {
@@ -60,15 +60,15 @@ Total diblokir: *${blockNumber.length}* user\n`
 }
 
 exports.notAdmin = () => {
-    return `❎ User bukan seorang admin! ❎`
+    return `hallo ${pushname}, Perintah hanya bisa diaktifkan oleh *Admin*\nSilahkan tag admin untuk mengaktifkan fitur ini!`
 }
 
 exports.adminAlready = () => {
-    return `❎ Tidak  dapat mem-promote user yang merupakan admin!`
+    return `Tidak dapat menjadikan user admin yang merupakan admin!`
 }
 
 exports.botNotAdmin = () => {
-    return `Jadikan bot sebagai admin terlebih dahulu! 🙏`
+    return `hallo ${pushname}, Perintah hanya bisa diaktifkan jika bot menjadi *admin*\nKami menyarankan *admin* untuk menjadikan bot *admin terlebih dahulu*\nFollow instagram @trendtoday.id!`
 }
 
 exports.received = (pushname) => {
@@ -773,17 +773,8 @@ Recode : https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa9S3P8yfla_d9w-2-
 exports.tos = (ownernomer) => {
     return `
 *-------「 DONATE 」 -------*
-
-Hai kak ☺️ 
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
-
-Berapapun donasi kalian akan sangat berarti 👍
-
-Thanks!
-
-Contact person Owner:
-wa.me/${ownernomer}
-
+*Kami tidak membuka layanan donasi untuk bot ini*\n\nBot *bersifat gratis,* Namun jika anda *ingin tetap donasi,* donasilah ke *anak yatim piatu* atau *https://kitabisa.com*\nItu sudah merupakan bentuk donasi ke bot ini
+\n\nTerimakasih
     `
 }
 
